@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paralelização on Stats4Good</title>
+    <link>/tags/paraleliza%C3%A7%C3%A3o/</link>
+    <description>Recent content in Paralelização on Stats4Good</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <copyright>Copyright (c) 2017 , Stats4Good; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 24 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/paraleliza%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Paralelização</title>
+      <link>/blog/2016/11/24/2016-11-24-paralel/</link>
+      <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2016/11/24/2016-11-24-paralel/</guid>
+      <description>Paralelização e programação em GPU: Aspectos básicos Douglas R. Mesquita Azevedo
+Neste post trabalharemos aspectos básicos de programação em paralelo utilizando o software R. Para isso, serão necessários os pacotes doMC, parallel e foreach para programação utilizando os processadores da máquina, e para a programação utilizando uma placa gráfica (GPU) traremos alguns aspectos introdutórios.
+Computação paralela O assunto computação paralela data de 1958 quando John Cocke e Daniel Slotnick discutiram o uso do paralelismo para cálculos numéricos pela primeira vez na IBM.</description>
+    </item>
+    
+  </channel>
+</rss>

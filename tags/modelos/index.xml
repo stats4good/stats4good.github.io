@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modelos on Stats4Good</title>
+    <link>/tags/modelos/</link>
+    <description>Recent content in Modelos on Stats4Good</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <copyright>Copyright (c) 2017 , Stats4Good; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 04 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/modelos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gibbs Sampler Colapsado</title>
+      <link>/blog/2016/11/04/2016-11-04-gibbs/</link>
+      <pubDate>Fri, 04 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2016/11/04/2016-11-04-gibbs/</guid>
+      <description>O objetivo desta apresentação é mostrar o algoritmo  Gibbs Sampler Colapsado no contexto da técnica LDA ( Latent Dirichlet Alocation ).
+Para isso, as seguintes atividades foram desenvolvidas a partir de bases reais de documentos:
+  Implementação do modelo LDA ( Gibbs Sampler  padrão);   Implementação do algoritmo Collapsed Gibbs Sampler  conforme descrito no artigo de Griffiths and Steyvers (2004).  
+  1 - Definição do Modelo e Algoritmos      1.</description>
+    </item>
+    
+  </channel>
+</rss>
