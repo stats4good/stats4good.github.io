@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Expressões Regulares on Stats4Good</title>
-    <link>https://stats4good.github.io/tags/express%C3%B5es-regulares/</link>
+    <link>/tags/express%C3%B5es-regulares/</link>
     <description>Recent content in Expressões Regulares on Stats4Good</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Fri, 02 Sep 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://stats4good.github.io/tags/express%C3%B5es-regulares/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/express%C3%B5es-regulares/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>base e stringr: Trabalhando com expressões regulares para manipular strings</title>
-      <link>https://stats4good.github.io/blog/2016/09/02/2016-09-02-stringr/</link>
+      <link>/blog/2016/09/02/2016-09-02-stringr/</link>
       <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://stats4good.github.io/blog/2016/09/02/2016-09-02-stringr/</guid>
+      <guid>/blog/2016/09/02/2016-09-02-stringr/</guid>
       <description>.col2 { columns: 2 200px; /* number of columns and width in pixels*/ -webkit-columns: 2 200px; /* chrome, safari */ -moz-columns: 2 200px; /* firefox */ } .col3 { columns: 3 100px; -webkit-columns: 3 100px; -moz-columns: 3 100px; }  Neste post irei escrever e exemplificar o uso de expressões regulares em possíveis situações bem como a sua utilização dentro do R. Para isso escolhi apresentar o pacote stringr além de algumas funções básicas contidas na base do R (base).</description>
     </item>
     

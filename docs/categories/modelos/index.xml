@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Modelos on Stats4Good</title>
-    <link>https://stats4good.github.io/categories/modelos/</link>
+    <link>/categories/modelos/</link>
     <description>Recent content in Modelos on Stats4Good</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Fri, 04 Nov 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://stats4good.github.io/categories/modelos/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/modelos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gibbs Sampler Colapsado</title>
-      <link>https://stats4good.github.io/blog/2016/11/04/2016-11-04-gibbs/</link>
+      <link>/blog/2016/11/04/2016-11-04-gibbs/</link>
       <pubDate>Fri, 04 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://stats4good.github.io/blog/2016/11/04/2016-11-04-gibbs/</guid>
+      <guid>/blog/2016/11/04/2016-11-04-gibbs/</guid>
       <description>O objetivo desta apresentação é mostrar o algoritmo  Gibbs Sampler Colapsado no contexto da técnica LDA ( Latent Dirichlet Alocation ).
 Para isso, as seguintes atividades foram desenvolvidas a partir de bases reais de documentos:
   Implementação do modelo LDA ( Gibbs Sampler  padrão);   Implementação do algoritmo Collapsed Gibbs Sampler  conforme descrito no artigo de Griffiths and Steyvers (2004).  
@@ -25,19 +25,19 @@ Para isso, as seguintes atividades foram desenvolvidas a partir de bases reais d
     
     <item>
       <title>Uma Introdução à Modelagem de Equações Estruturais</title>
-      <link>https://stats4good.github.io/blog/2016/10/07/2016-10-07-ee/</link>
+      <link>/blog/2016/10/07/2016-10-07-ee/</link>
       <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://stats4good.github.io/blog/2016/10/07/2016-10-07-ee/</guid>
+      <guid>/blog/2016/10/07/2016-10-07-ee/</guid>
       <description>Uma Introdução à Modelagem de Equações Estruturais --     code{white-space: pre;}  pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .</description>
     </item>
     
     <item>
       <title>Birnbaum-Saunders</title>
-      <link>https://stats4good.github.io/blog/2016/09/07/2016-06-07-birbaum/</link>
+      <link>/blog/2016/09/07/2016-06-07-birbaum/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://stats4good.github.io/blog/2016/09/07/2016-06-07-birbaum/</guid>
+      <guid>/blog/2016/09/07/2016-06-07-birbaum/</guid>
       <description>Introdução a Estimação e Modelagem no R com o Uso da Distribuição Birnbaum-Saunders --         code{white-space: pre;} div.sourceCode { overflow-x: auto; } table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode { margin: 0; padding: 0; vertical-align: baseline; border: none; } table.sourceCode { width: 100%; line-height: 100%; } td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; } td.sourceCode { padding-left: 5px; } code  span.</description>
     </item>
     

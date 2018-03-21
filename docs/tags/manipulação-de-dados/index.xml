@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manipulação De Dados on Stats4Good</title>
-    <link>https://stats4good.github.io/tags/manipula%C3%A7%C3%A3o-de-dados/</link>
+    <link>/tags/manipula%C3%A7%C3%A3o-de-dados/</link>
     <description>Recent content in Manipulação De Dados on Stats4Good</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Fri, 09 Sep 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://stats4good.github.io/tags/manipula%C3%A7%C3%A3o-de-dados/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/manipula%C3%A7%C3%A3o-de-dados/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introdução à manipulação de dados no R usando os pacotes data.table e dplyr</title>
-      <link>https://stats4good.github.io/blog/2016/09/09/2016-09-09-dt-dplyr/</link>
+      <link>/blog/2016/09/09/2016-09-09-dt-dplyr/</link>
       <pubDate>Fri, 09 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://stats4good.github.io/blog/2016/09/09/2016-09-09-dt-dplyr/</guid>
+      <guid>/blog/2016/09/09/2016-09-09-dt-dplyr/</guid>
       <description>Introdução Neste post trataremos de manipulação de dados usando os pacotes data.table e dplyr. Nosso objetivo é fazer uma breve introdução às principais funções de ambos pacotes. Além disso, destacaremos algumas vantagens e desvantagens de utilizar um ou o outro. Nos exemplos apresentaremos os códigos para os 2 pacotes simultaneamente, para que fique claro a diferença entre as sintaxes desses pacotes.
 Provavelmente se você encontrou esse post é por que você já sabe que os pacotes data.</description>
     </item>
