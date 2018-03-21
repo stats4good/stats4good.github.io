@@ -222,7 +222,7 @@ ul.list-style-none {
 }
 @media (min-width: 1300px) {
   body.boxed {
-    background: url(http://subtlepatterns.com/patterns/subtle_zebra_3d.png);
+    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/subtle_zebra_3d.png);
   }
   body.boxed #all {
     position: relative;
@@ -306,13 +306,11 @@ ul.list-style-none {
 }
 .navbar ul.nav > li > a {
   text-transform: uppercase;
-  text-decoration: underline;
-  font-weight: bold;
   letter-spacing: 0.08em;
   border-top: solid 5px transparent;
 }
 .navbar ul.nav > li > a:hover {
-  border-top: solid 5px #38a7bb;
+  border-top: solid 5px transparent;
 }
 .navbar ul.nav > li.active > a,
 .navbar ul.nav > li.open > a {
@@ -3074,8 +3072,8 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #555555;
-  background-color: #80cbd9;
+  color: #333333;
+  background-color: #dadcdb;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -3155,6 +3153,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
+  text-align: justify;
 }
 a {
   color: #38a7bb;
@@ -3554,4 +3553,10 @@ a.list-group-item.active > .badge,
 .yamm .dropdown.yamm-fw .dropdown-menu {
   left: 15px;
   right: 15px;
+}
+
+pre {
+    margin: 20px 0px 20px 0px !important;
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
 }
