@@ -1,0 +1,254 @@
+---
+title: "Importando dados no R: Pacotes 'data.table' e 'readr'"
+author: "Nívea Bispo"
+date: "2016-09-09"
+categories: ["Tutoriais R"]
+slug: "import_data"
+tags: ["R", "Importando dados"]
+banner: "img/banners/import_data.gif"
+draft: false
+summary: "Frequentemente nos deparamos com problemas ao importar bases de dados no R. Neste post trazemos uma breve introdução dos pacotes data.table e readr"
+---
+
+
+
+<!-- Inserindo a imagem das extensões -->
+<!--
+<img src="ext_database.jpg" style="position:absolute; top:13px; right:40px; width: 170px; heigth: 170px;" />
+-->
+<style>
+  .col2S {
+    columns: 2 250px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 250px; /* chrome, safari */
+    -moz-columns: 2 250px;    /* firefox */
+  }
+</style>
+<style>
+  .col2 {
+    columns: 2 400px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 400px; /* chrome, safari */
+    -moz-columns: 2 400px;    /* firefox */
+  }
+</style>
+<div id="como-ler-bases-de-dados-no-r-de-maneira-rapida-e-eficiente" class="section level3">
+<h3><span style="color:#ff382f"> Como ler bases de dados no R de maneira rápida e eficiente? </span></h3>
+<hr />
+<!-- Duas colunas -->
+<!-- Inserindo a imgem em extensão gif -->
+<div class="col2S, 180px">
+<p><img src="/blog/2016-09-09-import_data_files/figure-html/Matrix_Code.gif" style="width: 180px; heigth: 500px; float: right"/></p>
+</div>
+<hr />
+<div id="existem-pacotes-na-base-do-r-mais-comumente-usados-para-ler-eou-criar-arquivos-de-dados-com-diferentes-extensoes-.txt-.csv-.xls-.sav-.dta-.sas-etc.-os-comandos-mais-usuais-sao-o-read.table-read.csv-e-o-read.delim-todos-do-pacote-utils.-para-a-lei-tura-de-extensoes-diferentes-das-usuais-como-por-exemplo-.xls-.sav-.dta-.sas-ha-tam-bem-alguns-pacotes-disponiveis-gdata-.xls-foreign-.dta-e-hmisc-.sav-.sas." class="section level4">
+<h4>Existem pacotes na base do R mais comumente usados para ler (e/ou criar) arquivos de dados com diferentes extensões (.txt, .csv, .xls, .sav, .dta, .sas, etc). Os comandos mais usuais são o <strong>‘read.table’</strong>, <strong>‘read.csv’</strong> e o <strong>‘read.delim’</strong>, todos do pacote <strong>utils</strong>. Para a lei-tura de extensões diferentes das usuais, como por exemplo, <em>.xls</em>, <em>.sav</em>, <em>.dta</em> , <em>.sas</em>, há tam-bém alguns pacotes disponíveis: <strong>gdata</strong> (<em>.xls</em>), <strong>foreign</strong> (<em>.dta</em>) e <strong>Hmisc</strong> (<em>.sav, .sas</em>).</h4>
+</div>
+<div id="se-ha-opcoes-disponiveis-por-que-usar-pacotes-como-o-data.tablelink_data.table-readrlink_readr-readxllink_readxl-e-havenlink_haven-para-leitura-e-manipulacao-de-bases-de-dados-no-r" class="section level4">
+<h4>Se há opções disponíveis, por que usar pacotes como o <a href="https://github.com/Rdatatable/data.table" title="data.table">data.table</a>, <a href="https://github.com/hadley/readr" title="readr">readr</a>, <a href="https://github.com/hadley/readxl" title="readxl">readxl</a> e <a href="https://github.com/hadley/haven" title="haven">haven</a>, para leitura e manipulação de bases de dados no R?</h4>
+<hr />
+<!-- seÃ§Ã£o 1 -->
+</div>
+</div>
+<div id="antes-de-falar-dos-pacotes-algumas-definicoes" class="section level3">
+<h3><span style="color:#ff382f"> Antes de falar dos pacotes, algumas definições… </span></h3>
+<ul>
+<li><strong>Arquivos no formato delimitado:</strong> São arquivos onde qualquer caracter pode ser usado para separar os termos. Os delimitadores mais usuais são: vírgula, espaço e : . Arquivos com este tipo de extensão terão suas colunas separadas por um delimitador.</li>
+<li><strong>Arquivos no formato de largura fixa:</strong> São arquivos onde as colunas são definidas pela posição dos caracteres nos arquivos.</li>
+</ul>
+<hr />
+<p><img src="/blog/2016-09-09-import_data_files/figure-html/fwf_ex1.jpg" style="width: 900px; heigth: 900px; float: center: 500px"/></p>
+<ul>
+<li>link da base mostrada na figura acima: <a href="http://www.cpc.ncep.noaa.gov/data/indices/wksst8110.for" class="uri">http://www.cpc.ncep.noaa.gov/data/indices/wksst8110.for</a>.</li>
+</ul>
+<hr />
+<!-- seÃ§Ã£o 1 -->
+</div>
+<div id="data.table" class="section level2">
+<h2><span style="color:#ff382f"> data.table </span></h2>
+<p>Pacote criado por Matt Dowle (autor) e Arun Srinivasan (co-autor).</p>
+<ul>
+<li>O que faz?</li>
+</ul>
+<ol style="list-style-type: lower-roman">
+<li>Fornece uma versão melhorada do comando <strong>‘data.frame’</strong>, permitindo ao usuário manipular/criar bases de dados mais rapidamente;</li>
+<li>É especialmente útil para manipulação de grandes bases de dados (por exemplo, 1 GB para 100 GB na memória RAM).</li>
+</ol>
+<ul>
+<li>Objetivos?</li>
+</ul>
+<ol style="list-style-type: lower-roman">
+<li>Reduzir o tempo de programação (como? Chamando menos funções na execução de algum comando);</li>
+<li>Reduzir o tempo de computação (como? Permitindo uma rápida agregação e atualização por referência).</li>
+</ol>
+<ul>
+<li>Sintaxe: <code>DT[i,j,by]</code>.</li>
+</ul>
+<img src="/blog/2016-09-09-import_data_files/figure-html/DT_ex1.jpg" style="width: 550px; heigth: 550px; float: center: 100px"/>
+</div>
+<p><img src="/blog/2016-09-09-import_data_files/figure-html/DT_ex2.jpg" style="width: 400px; heigth: 400px; float: center:100px"/></p>
+<p>Outra vantagem do pacote está na velocidade (em grandes bases de dados ele chega a ser 10x mais rápido que as funções usuais) com que ele lê a base de dados.</p>
+<pre class="r"><code>## Por exemplo, suponha uma base com extensão .csv contendo 1 milhão de linhas e 6 colunas (50MB). Se usarmos:
+
+#read.csv(&quot;teste.csv&quot;)     # time: 30-60 s
+#fread(&quot;teste.csv&quot;)        # times: 3s</code></pre>
+<p>ou</p>
+<pre class="r"><code>## outra base contendo 200 milhÃµes de linhas e 16 colunas (20GB):
+
+#read.csv(&quot;big.csv&quot;)   # time: ~ 1h
+#fread(&quot;big.csv&quot;)      # time: ~ 10 min</code></pre>
+<p>Afinal, como utilizar o comando <a href="https://s3.amazonaws.com/assets.datacamp.com/img/blog/data+table+cheat+sheet.pdf" title="DT[i,j,by]">DT[i,j,by]</a>, e o que faz cada um dos seus índices?</p>
+<p>Outras funções importantes do pacote são:</p>
+<ul>
+<li><strong>fread:</strong> Similar ao <em>read.table</em>, porém mais rápido. Argumentos como <em>sep</em>, <em>colClasses</em> e <em>nrows</em> , são detectados de forma automática. Esta função é para leitura de arquivos delimitados.</li>
+<li><strong>merge:</strong> Faz o <em>merge</em> de 2 arquivos <em>data.table</em>.</li>
+<li><strong>setDT :</strong> Converte listas e arquivos no formato <em>data.frame</em>, em arquivos no formato <em>data.table</em>, usando referência.</li>
+</ul>
+<pre class="r"><code>require(data.table)</code></pre>
+<pre><code>## Loading required package: data.table</code></pre>
+<pre class="r"><code>dt1 &lt;- data.table(A = letters[1:10], X = 1:10, key = &quot;A&quot;)
+dt2 &lt;- data.table(A = letters[5:14], Y = 1:10, key = &quot;A&quot;)
+m&lt;-merge(dt1, dt2,all = TRUE)
+print(m)</code></pre>
+<pre><code>##     A  X  Y
+##  1: a  1 NA
+##  2: b  2 NA
+##  3: c  3 NA
+##  4: d  4 NA
+##  5: e  5  1
+##  6: f  6  2
+##  7: g  7  3
+##  8: h  8  4
+##  9: i  9  5
+## 10: j 10  6
+## 11: k NA  7
+## 12: l NA  8
+## 13: m NA  9
+## 14: n NA 10</code></pre>
+<pre class="r"><code>X = data.frame(A=sample(3, 10, TRUE), B=sample(letters[1:3], 10, TRUE), C=sample(10),stringsAsFactors=FALSE)
+print(X)</code></pre>
+<pre><code>##    A B  C
+## 1  2 a  1
+## 2  3 a  8
+## 3  3 b  9
+## 4  2 a  3
+## 5  3 c  2
+## 6  2 b  5
+## 7  3 c  7
+## 8  2 c  6
+## 9  1 b  4
+## 10 1 c 10</code></pre>
+<pre class="r"><code>newX&lt;-setDT(X)[, .N, by=.(A,B)]
+print(newX)</code></pre>
+<pre><code>##    A B N
+## 1: 2 a 2
+## 2: 3 a 1
+## 3: 3 b 1
+## 4: 3 c 2
+## 5: 2 b 1
+## 6: 2 c 1
+## 7: 1 b 1
+## 8: 1 c 1</code></pre>
+<hr />
+<div class="col2">
+<!-- SeÃ§Ã£o 2 -->
+</div>
+<div id="readr" class="section level2">
+<h2><span style="color:#ff382f"> readr</span></h2>
+<p>Pacote para leitura de bases de dados criado por Hadley Wickham.</p>
+<ul>
+<li>O que faz?</li>
+</ul>
+<ol style="list-style-type: lower-roman">
+<li>Lê bases de dados nos formatos <em>.txt</em>, <em>.csv</em>, <em>.fwf</em> e <em>.log</em>, com uma velocidade 10x maior que comandos usuais. No <strong>readr</strong> não há a necessidade de converter os caracteres em fatores usando <code>stringAsFactors = FALSE</code>.</li>
+</ol>
+<ul>
+<li>Objetivo?</li>
+</ul>
+<ol style="list-style-type: lower-roman">
+<li>Fornecer uma maneira rápida e amigável para leitura de dados no R.</li>
+</ol>
+<ul>
+<li>Principais comandos:</li>
+</ul>
+<ol style="list-style-type: lower-roman">
+<li><code>read_delim(), read_csv(), read_tsv(), read_csv2()</code></li>
+<li><code>read_fwf(), read_table()</code></li>
+<li><code>read_log()</code></li>
+<li><code>read_file() ## lê um arquivo em uma *string*.</code></li>
+</ol>
+<ul>
+<li>Algumas curiosidades:</li>
+</ul>
+<ol style="list-style-type: lower-roman">
+<li>Lê arquivos <em>.csv</em> dentro de um data frame usando o <code>read_csv()</code>.</li>
+</ol>
+<pre class="r"><code>require(readr)</code></pre>
+<pre><code>## Loading required package: readr</code></pre>
+<pre class="r"><code>mtcars_path &lt;- tempfile(fileext = &quot;.csv&quot;)
+write_csv(mtcars, mtcars_path)            ## salva um data frame no formato de arquivo delimitado
+mt&lt;-read_csv(mtcars_path)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   mpg = col_double(),
+##   cyl = col_integer(),
+##   disp = col_double(),
+##   hp = col_integer(),
+##   drat = col_double(),
+##   wt = col_double(),
+##   qsec = col_double(),
+##   vs = col_integer(),
+##   am = col_integer(),
+##   gear = col_integer(),
+##   carb = col_integer()
+## )</code></pre>
+<pre class="r"><code>print(mt)</code></pre>
+<pre><code>## # A tibble: 32 × 11
+##      mpg   cyl  disp    hp  drat    wt  qsec    vs    am  gear  carb
+##    &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;
+## 1   21.0     6 160.0   110  3.90 2.620 16.46     0     1     4     4
+## 2   21.0     6 160.0   110  3.90 2.875 17.02     0     1     4     4
+## 3   22.8     4 108.0    93  3.85 2.320 18.61     1     1     4     1
+## 4   21.4     6 258.0   110  3.08 3.215 19.44     1     0     3     1
+## 5   18.7     8 360.0   175  3.15 3.440 17.02     0     0     3     2
+## 6   18.1     6 225.0   105  2.76 3.460 20.22     1     0     3     1
+## 7   14.3     8 360.0   245  3.21 3.570 15.84     0     0     3     4
+## 8   24.4     4 146.7    62  3.69 3.190 20.00     1     0     4     2
+## 9   22.8     4 140.8    95  3.92 3.150 22.90     1     0     4     2
+## 10  19.2     6 167.6   123  3.92 3.440 18.30     1     0     4     4
+## # ... with 22 more rows</code></pre>
+<ol start="2" style="list-style-type: lower-roman">
+<li>Se algum problema surgir ao tentar analisar a base de dados, a função <em>read_</em> retornará um aviso informando quantos problemas existem.</li>
+</ol>
+<pre class="r"><code>df &lt;- read_csv(col_types = &quot;dd&quot;, col_names = c(&quot;x&quot;, &quot;y&quot;), skip = 1,
+               &quot;1,2 
+                a,b&quot;)</code></pre>
+<pre><code>## Warning: 2 parsing failures.
+## row col expected actual         file
+##   1   x a double      a literal data
+##   1   y a double      b literal data</code></pre>
+<pre class="r"><code>problems(df)</code></pre>
+<pre><code>## # A tibble: 2 × 5
+##     row   col expected actual         file
+##   &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;        &lt;chr&gt;
+## 1     1     x a double      a literal data
+## 2     1     y a double      b literal data</code></pre>
+<ol start="3" style="list-style-type: lower-roman">
+<li>Comparado ao comando <em>fread</em> do pacote <strong>data.table</strong>, o <em>readr</em>:</li>
+</ol>
+<ul>
+<li>É mais lento (cerca de ~1.2-2x mais). Portanto, se quiser um melhor desempenho, use o <em>fread</em>;</li>
+<li>O <em>fread</em> salva o trabalho de forma automática, “adivinhando” o tipo de delimitador. Já o <em>readr</em> te força a definir esses parâmetros;</li>
+<li>O <em>readr</em> foi projetado (em C++ e <em>Rcpp</em>) para ser o mais geral possível, enquanto o <em>fread</em> foi projetado (em C) para ser o mais rápido possível na leitura.</li>
+</ul>
+<hr />
+<!-- SeÃ§Ã£o 3 -->
+<div id="algumas-referencias" class="section level3">
+<h3>Algumas Referências…</h3>
+<ul>
+<li><p><a href="http://user2014.stat.ucla.edu/files/tutorial_Matt.pdf" title="Tutorial-data.table">Tutorial-data.table</a></p></li>
+<li><p><a href="https://www.datacamp.com/courses/data-table-data-manipulation-r-tutorial" title="short_course-data.table">short_course-data.table</a></p></li>
+<li><p><a href="https://github.com/hadley/readr" title="readr">readr</a></p></li>
+</ul>
+<hr />
+<!-- DescriÃ§Ã£o dos links -->
+</div>
+</div>

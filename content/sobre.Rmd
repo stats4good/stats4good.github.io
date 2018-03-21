@@ -1,0 +1,24 @@
+---
+title: "Sobre"
+output:
+  blogdown::html_page
+---
+
+# <font color = "#1f3d7a"> Quem somos? </font>
+
+Somos um grupo de estudantes entusiastas da ciência dos dados. Nosso objetivo é trazer estatística e análise de dados como ferramentas de auxilio à sociedade.
+
+# <font color = "#007a99"> História </font>
+
+O Grupo S4G foi fundando em março de 2016 por alunos do programa de pós graduação em estatística da UFMG. A ideologia do grupo segue três princípios: (i) aprender , (ii) ensinar e (iii) discutir . Estes princípios são aplicados nas mais recentes tecnologias em análise, modelagem, gerenciamento e visualização de dados.
+
+<center>
+![](/img/about_s4g.png)
+</center>
+
+
+
+#  <font color = "#a6a6a6"> Público Alvo </font>
+
+Qualquer pessoa que acredita que a sociedade pode ser transformada para melhor através dos dados. Pessoas que são loucas por Estatística e Probabilidade. Pessoas sedentas por inovação tecnológica. Pessoas que acreditam que a Estatística moderna é a ciência dos dados.
+
