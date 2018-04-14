@@ -10,7 +10,7 @@
 }
 
 #post-content table th {
-    background: #38a7bb;
+    background: #46a0ba;
     /* background: #c21f25; */
     /* background: #c21f25; */
     color: #fff;
@@ -36,7 +36,7 @@ i.fa.fa-2x.fa-envelope.fa:hover {
 }
 
 i.fa.fa-2x.fa-twitter.fa:hover {
-    color:#46a0ba;
+    color:#46a0ba !important;
 }
 
 /* nav bar - hover */
