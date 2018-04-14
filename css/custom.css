@@ -10,7 +10,7 @@
 }
 
 #post-content table th {
-    background: #6aae7a;
+    background: #38a7bb;
     /* background: #c21f25; */
     /* background: #c21f25; */
     color: #fff;
@@ -32,6 +32,10 @@ i.fa.fa-2x.fa-github.fa:hover {
 }
 
 i.fa.fa-2x.fa-envelope.fa:hover {
+    color:#46a0ba;
+}
+
+i.fa.fa-2x.fa-twitter.fa:hover {
     color:#46a0ba;
 }
 

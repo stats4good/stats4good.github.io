@@ -2,120 +2,120 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Stats4Good</title>
-    <link>/tags/</link>
+    <link>https://stats4good.github.io/tags/</link>
     <description>Recent content in Tags on Stats4Good</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Fri, 09 Sep 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://stats4good.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dplyr</title>
-      <link>/tags/dplyr/</link>
+      <link>https://stats4good.github.io/tags/dplyr/</link>
       <pubDate>Fri, 09 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/dplyr/</guid>
+      <guid>https://stats4good.github.io/tags/dplyr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Equações Estruturais</title>
-      <link>/tags/equa%C3%A7%C3%B5es-estruturais/</link>
+      <link>https://stats4good.github.io/tags/equa%C3%A7%C3%B5es-estruturais/</link>
       <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/equa%C3%A7%C3%B5es-estruturais/</guid>
+      <guid>https://stats4good.github.io/tags/equa%C3%A7%C3%B5es-estruturais/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Expressões Regulares</title>
-      <link>/tags/express%C3%B5es-regulares/</link>
+      <link>https://stats4good.github.io/tags/express%C3%B5es-regulares/</link>
       <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/express%C3%B5es-regulares/</guid>
+      <guid>https://stats4good.github.io/tags/express%C3%B5es-regulares/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Importando Dados</title>
-      <link>/tags/importando-dados/</link>
+      <link>https://stats4good.github.io/tags/importando-dados/</link>
       <pubDate>Fri, 09 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/importando-dados/</guid>
+      <guid>https://stats4good.github.io/tags/importando-dados/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Manipulação De Dados</title>
-      <link>/tags/manipula%C3%A7%C3%A3o-de-dados/</link>
+      <link>https://stats4good.github.io/tags/manipula%C3%A7%C3%A3o-de-dados/</link>
       <pubDate>Fri, 09 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/manipula%C3%A7%C3%A3o-de-dados/</guid>
+      <guid>https://stats4good.github.io/tags/manipula%C3%A7%C3%A3o-de-dados/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelagem</title>
-      <link>/tags/modelagem/</link>
+      <link>https://stats4good.github.io/tags/modelagem/</link>
       <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/modelagem/</guid>
+      <guid>https://stats4good.github.io/tags/modelagem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelos</title>
-      <link>/tags/modelos/</link>
+      <link>https://stats4good.github.io/tags/modelos/</link>
       <pubDate>Fri, 04 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/modelos/</guid>
+      <guid>https://stats4good.github.io/tags/modelos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Paralelização</title>
-      <link>/tags/paraleliza%C3%A7%C3%A3o/</link>
+      <link>https://stats4good.github.io/tags/paraleliza%C3%A7%C3%A3o/</link>
       <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/paraleliza%C3%A7%C3%A3o/</guid>
+      <guid>https://stats4good.github.io/tags/paraleliza%C3%A7%C3%A3o/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://stats4good.github.io/tags/r/</link>
       <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>https://stats4good.github.io/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
+      <link>https://stats4good.github.io/tags/r-markdown/</link>
       <pubDate>Mon, 08 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r-markdown/</guid>
+      <guid>https://stats4good.github.io/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Relatório</title>
-      <link>/tags/relat%C3%B3rio/</link>
+      <link>https://stats4good.github.io/tags/relat%C3%B3rio/</link>
       <pubDate>Mon, 08 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/relat%C3%B3rio/</guid>
+      <guid>https://stats4good.github.io/tags/relat%C3%B3rio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visualização</title>
-      <link>/tags/visualiza%C3%A7%C3%A3o/</link>
+      <link>https://stats4good.github.io/tags/visualiza%C3%A7%C3%A3o/</link>
       <pubDate>Fri, 18 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/visualiza%C3%A7%C3%A3o/</guid>
+      <guid>https://stats4good.github.io/tags/visualiza%C3%A7%C3%A3o/</guid>
       <description></description>
     </item>
     
