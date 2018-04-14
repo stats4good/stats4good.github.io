@@ -40,3 +40,22 @@ i.fa.fa-2x.fa-envelope.fa:hover {
 .navbar-default .navbar-nav > li > a:hover {
     color: #46a0ba  !important;
 }
+
+/* fig caption */
+
+p#caption {
+  font-size: 10px;
+}
+
+/* text images */
+
+img {
+  max-width: 100%;
+}
+
+/*  footnote - fontsize */
+
+/* div.footnotes {
+    font-size: 11px;
+} 
+*/
