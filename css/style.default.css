@@ -3167,7 +3167,7 @@ a {
 }
 a:hover,
 a:focus {
-  /* color: transparent; */
+  color: transparent;
   text-decoration: none;
 }
 a:focus {
